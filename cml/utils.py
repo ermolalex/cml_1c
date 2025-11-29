@@ -16,8 +16,8 @@ class AbstractUserDelegate(object):
         try:
             module_name = settings.CML_USER_DELEGATE
         except AttributeError:
-            logger.error('CML_PROJECT_PIPELINES is not configured in settings. '
-                         'You can create pipeline file by command: python manage.py cmlpipelines')
+            logger.error('CML_USER_DELEGATE is not configured in settings. '
+                         'You can create CML_USER_DELEGATE module file by command: python manage.py cml_init')
             raise
 
         try:

@@ -35,7 +35,7 @@ def test_parsing_from_string():
 
 
 def test_parsing_file():
-    tree = etree.parse(r"E:\dj_oscar_2\cml_1c\tests\import.xml")
+    tree = etree.parse("import.xml")
     root = tree.getroot()
 
     assert "КоммерческаяИнформация" in root.tag

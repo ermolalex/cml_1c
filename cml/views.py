@@ -6,7 +6,7 @@ import datetime
 from django.core.files.uploadedfile import SimpleUploadedFile
 from django.conf import settings
 from django.db import transaction
-from django.http import (HttpRequest, HttpResponse)
+from django.http import HttpRequest, HttpResponse
 from django.utils import timezone
 from django.views.decorators.csrf import csrf_exempt
 from django.views.generic import View
@@ -30,9 +30,8 @@ def front_view(request):
     return ProtocolView().dispatch(request)
 
 
-class ResponseException(Exception):
-    def __init__(self, response: HttpResponse):
-        self.res = response
+class ClientException(Exception):
+    pass
 
 
 def response_success(msg='') -> HttpResponse:
@@ -95,7 +94,7 @@ class ProtocolSession(object):
     def close(self):
         self._rec.state = ExchangeState.DONE
 
-    def set_operation(self, operation, filename):
+    def set_operation(self, operation, filename=None):
         self._rec.operation = operation
         self._rec.file_name = filename
         self._rec.save()
@@ -109,7 +108,7 @@ class ProtocolSession(object):
                 aa = Exchange.objects.filter(state=ExchangeState.INIT)  # type: ignore[attr-defined]
                 aa.filter(user=self.user).update(
                     state=ExchangeState.ABORT,
-                    report='Aborted by the same user'
+                    report='Replaced initialisation'
                 )
                 aa.exclude(user=self.user).update(
                     state=ExchangeState.ABORT,
@@ -125,10 +124,10 @@ class ProtocolSession(object):
             else:
                 try:
                     rec = Exchange.objects.get(state=ExchangeState.INIT, user=self.user)  # type: ignore[attr-defined]
-                except Exception:
+                except Exchange.DoesNotExist:
                     msg = 'Session has not been started. Try to make init request.'
                     logger.info(msg)
-                    raise ResponseException(response_error(msg))
+                    raise ClientException(msg)
 
         self._rec = rec
         pv = self._pv
@@ -175,7 +174,7 @@ class ProtocolSession(object):
                 try:
                     rec.report = ud.get_report()
                 except Exception as e:
-                    msg = f'Exception get_report: {e}'
+                    msg = f'User delegate get_report: {e}'
                     rec.report = msg
                     logger.error(msg, exc_info=True)
                     # result of operation will be OK.
@@ -252,11 +251,11 @@ class ProtocolView(View):
     # Check GET parameter filename and fix it, return (response, filename)
     @staticmethod
     def _get_param_filename(request: HttpRequestAuth) -> str:
-        filename = request.GET['filename']
+        filename = request.GET.get('filename')
         if not filename:  # None or ''
             msg = f'GET parameter <filename>="{filename}" is empty.'
             logger.info(msg)
-            raise ResponseException(response_error(msg))
+            raise ClientException(msg)
         return filename
 
     def session(self, request: HttpRequestAuth, is_init=False):
@@ -281,6 +280,8 @@ class ProtocolView(View):
 
         try:
             res = api_method(request)
+        except ClientException as e:
+            return response_error(str(e))
         except Exception as e:
             logger.error(f'Internal server error: method={api_method.__name__} msg="{e}" '
                          f'GET: {get_kwargs}  user="{request.user}"',
@@ -298,8 +299,9 @@ class ProtocolView(View):
         return response_success(res)
 
     def api_init(self, request: HttpRequestAuth):
-        with self.session(request, is_init=True):
-            logger.info(f'catalog_init(user={request.user}): OK')
+        with self.session(request, is_init=True) as cur:
+            cur.set_operation(self.operation)
+            logger.info(f'OK: user={request.user}')
 
             result = 'zip={}\nfile_limit={}'.format(
                 'yes' if settings.CML_USE_ZIP else 'no',
@@ -355,7 +357,7 @@ class ProtocolView(View):
 
             fref = items.FileRef(filename)
             if not fref.full_path.exists():
-                msg = f'File not found: {fref.path}'
+                msg = f'File not found: {fref.full_path}'
                 logger.info(msg)
                 return response_error(msg)
 

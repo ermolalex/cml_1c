@@ -6,7 +6,7 @@ from datetime import datetime
 from enum import Enum, IntEnum
 from pathlib import Path
 from . import logger
-# from .conf import settings
+from .conf import settings
 from .xml import XmlElement
 
 
@@ -429,17 +429,16 @@ class FileState(IntEnum):
 
 class FileRef(object):
     def __init__(self, raw_path: str, base_path: str = None):
-        # path = raw_path.strip()
-        # if len(path) == 0:
-        #     raise ValueError('Path must be not empty.')
-        #
-        # p = Path('/', path).resolve()  # Prevent ../ or ./ in raw_path
-        # self.path = Path(str(p)[1:])  # Cut first symbol '/', because it's relative path
-        #
-        # self.full_path = Path(base_path or self.base_path, self.path).resolve()  # Finally make absolute and safe path
-        self.full_path = Path(raw_path)  # Finally make absolute and safe path
+        path = raw_path.strip()
+        if len(path) == 0:
+            raise ValueError('Path must be not empty.')
 
-    #base_path = settings.CML_UPLOAD_ROOT
+        p = Path('/', path).resolve()  # Prevent ../ or ./ in raw_path
+        self.path = Path(str(p)[1:])  # Cut first symbol '/', because it's relative path
+
+        self.full_path = Path(base_path or self.base_path, self.path).resolve()  # Finally make absolute and safe path
+
+    base_path = settings.CML_UPLOAD_ROOT
     _image_suffixes = ['.png', '.gif', '.jpg', '.jpeg']
 
     def is_image_type(self):

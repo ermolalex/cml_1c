@@ -4,7 +4,8 @@ import importlib
 import inspect
 from . import logger
 from . import items, xml
-from .conf import settings
+#from .conf import settings
+from django.conf import settings
 
 
 class AbstractUserDelegate(object):

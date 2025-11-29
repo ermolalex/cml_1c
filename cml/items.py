@@ -6,7 +6,8 @@ from datetime import datetime
 from enum import Enum, IntEnum
 from pathlib import Path
 from . import logger
-from .conf import settings
+#from .conf import settings
+from django.conf import settings
 from .xml import XmlElement
 
 

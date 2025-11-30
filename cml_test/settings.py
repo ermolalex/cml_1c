@@ -199,3 +199,7 @@ HAYSTACK_CONNECTIONS = {
         'ENGINE': 'haystack.backends.simple_backend.SimpleEngine',
     },
 }
+
+OSCAR_SHIPPING_COUNTRIES = ["RU", "BY", "KZ", "UZ",]
+OSCAR_SLUG_FUNCTION = 'utils.slugify.slugify'
+OSCAR_FULFILMENT_PARTNRT_NAME = "Yandex"

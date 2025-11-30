@@ -44,12 +44,14 @@ INSTALLED_APPS = [
     'django.contrib.sites',
     'django.contrib.flatpages',
 
+    'apps.catalogue.apps.CatalogueConfig',
+    
     'oscar.config.Shop',
     'oscar.apps.analytics.apps.AnalyticsConfig',
     'oscar.apps.checkout.apps.CheckoutConfig',
     'oscar.apps.address.apps.AddressConfig',
     'oscar.apps.shipping.apps.ShippingConfig',
-    'oscar.apps.catalogue.apps.CatalogueConfig',
+    #'oscar.apps.catalogue.apps.CatalogueConfig',
     'oscar.apps.catalogue.reviews.apps.CatalogueReviewsConfig',
     'oscar.apps.communication.apps.CommunicationConfig',
     'oscar.apps.partner.apps.PartnerConfig',
@@ -79,9 +81,9 @@ INSTALLED_APPS = [
     'widget_tweaks',
     'haystack',
     'treebeard',
-    #'sorl.thumbnail',  # Default thumbnail backend, can be replaced
+    'sorl.thumbnail',  # Default thumbnail backend, can be replaced
     'django_tables2',
-    'commands'  # для management/commands
+    'apps.commands'  # для management/commands
 
 ]
 
@@ -202,4 +204,4 @@ HAYSTACK_CONNECTIONS = {
 
 OSCAR_SHIPPING_COUNTRIES = ["RU", "BY", "KZ", "UZ",]
 OSCAR_SLUG_FUNCTION = 'utils.slugify.slugify'
-OSCAR_FULFILMENT_PARTNRT_NAME = "Yandex"
+OSCAR_FULFILMENT_PARTNRT_NAME = "Яндекс"

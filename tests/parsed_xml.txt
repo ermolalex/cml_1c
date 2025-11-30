@@ -1,0 +1,573 @@
+Classifier:
+id="5d1d1996-e373-4a5f-ae0d-1494ca033024"
+name="Классификатор (Каталог 2025.10.20 12:06:14)"
+groups: [Сыродавленная продукция: [], Сыры: [Сыры штучка: [], Мягкие: [], Сулугуни: [], Твердые и полутвердые: []], Напитки: [Лимонады: [], Вода: [], Квас: [], Компот/Морс: [], Соки/Нектары: [], Пиво: [], Рыба/Морепродукты: []], Полуфабрикаты/Маринады: [], Крупа/рис/макароны/мука: [], Бакалея: [Чай/Кофе: [], Консервация: [], Мёд/варенье/джем/сгущенка: [], Соусы/маринады/специи: [], Хлеб: [], Детское питание: [], Паштеты/морепродукты/рыбные консервы: []], Кондитерские изделия: [], Масло растительное/оливковое: [Масло оливковое: []], Заморозка: [Супы: [], Вторые блюда: [], Пельмени/Хинкали/Манты/Вареники: [], Овощи/Фрукты: [], Блины/Оладьи/Выпечка: []], Колбасный отдел: [Алексеев ИП: [], Простор: [], Универсал: [], "Аркадия" (фабрика качества): [], "Ломоносовский мясокомбинат": [], Дом Ивановых: [], Лебедева: [], Мир колбас: [], Продсоюз: [], "Продстар": [], Агромясопром: []], Яйцо: [], Соленья: [], Сухофтрукты: [], Фрукты, овощи, зелень: [], Мясо: [Говядина: [], Кура: [], Свинина: [], Баранина: [], Наша ферма: [], Индейка/Утка/Гусь/Кролик: [], Кости: [], Фарш: []], Молочная продукция: [Новые Черницы: [], Масло весовое: [], Молоко/сливки/йогурт: [], Сметана: [], Творог: [], Майонез: [], Штучка: [Молоко штучка: [], Сметана штучка: [], Творог штучка: [], Йогурт/Сливки/Мол. коктейли: [], Кисломолочная продукция: [], Масло штучка: [], Десерты: []]], Мороженое: [Другое мороженое: [], CosmoIce: [], КизК: [], Любони: []], Хоз. расходы : [НЕ ИСПОЛЬЗУЕТСЯ: [], Хоз. расходы для магазина: [], Хоз. товары для продажи: []]]
+properties: [Энергетическая ценность, ккал: ValueType.NUMBER, Крепость: ValueType.NUMBER, Фильтрация: ValueType.LIST, Пастеризация: ValueType.LIST, Ограничения: ValueType.STRING, Предупреждения: ValueType.STRING, Минимальная температура (хран.): ValueType.NUMBER, Относительная влажность, до: ValueType.NUMBER, Относительная влажность, от: ValueType.NUMBER, Тип стандарта на продукцию (ГОСТ, ТУ, СТО, спецификация): ValueType.LIST, Срок годности, сут/дн: ValueType.NUMBER, Наименование товара в учетной системе поставщика: ValueType.STRING, Код товара в учетной системе поставщика: ValueType.STRING, Маркетинговое описание: ValueType.STRING, Уникальные характеристики товара (описание): ValueType.STRING, Локация Завод-изготовителя, фабрики: ValueType.LIST, Рекомендации по употреблению: ValueType.STRING, Углеводы: ValueType.NUMBER, На количество продукта: ValueType.LIST, Номер тех. регламента, стандарта на продукцию: ValueType.LIST, Тип слабоалкогольного напитка: ValueType.LIST, Код продукции в ЕГАИС: ValueType.STRING, Свидетельство о государственной регистрации: ValueType.STRING, Характеристика упаковки: ValueType.LIST, Предельный срок реализации после вскрытия кега: ValueType.NUMBER, Объем потребительской единицы, л: ValueType.NUMBER, Код вида продукции в ЕГАИС: ValueType.LIST, Автоприкрепление сведений по ДС/СС к кодам идентификации: ValueType.LIST, Единица измерения крепости: ValueType.LIST, Тип упаковки: ValueType.LIST, Глубина упаковки, мм: ValueType.NUMBER, Материал упаковки: ValueType.LIST, Ширина упаковки, мм: ValueType.NUMBER, Максимальная температура (хран.): ValueType.NUMBER, Энергетическая ценность, кДж: ValueType.NUMBER, Высота упаковки, мм: ValueType.NUMBER, Номер ГОСТ, ТУ, СТО, спецификации: ValueType.STRING, BRICK Code GPC GS1: ValueType.STRING, Декларация соответствия: ValueType.STRING, Набор: ValueType.STRING, Суббренд: ValueType.STRING, Сертификат соответствия: ValueType.STRING, Завод-изготовитель, фабрика: ValueType.STRING, Вес БРУТТО, кг: ValueType.NUMBER, Состав: ValueType.STRING, Это комплект: ValueType.STRING, Импортер: ValueType.STRING, Страна происхождения: ValueType.LIST, Обогащающие компоненты: ValueType.LIST, Энергетическая ценность, ккал: ValueType.NUMBER, Назначение упаковки: ValueType.LIST, Минимальная температура (хран.): ValueType.NUMBER, Относительная влажность, до: ValueType.NUMBER, Относительная влажность, от: ValueType.NUMBER, Вес брутто, г: ValueType.NUMBER, Тип стандарта на продукцию (ГОСТ, ТУ, СТО, спецификация): ValueType.LIST, Срок годности, сут/дн: ValueType.NUMBER, Наименование товара в учетной системе поставщика: ValueType.STRING, Код товара в учетной системе поставщика: ValueType.STRING, Маркетинговое описание: ValueType.STRING, Уникальные характеристики товара (описание): ValueType.STRING, Локация Завод-изготовителя, фабрики: ValueType.LIST, Тип молочного продукта: ValueType.LIST, Происхождение молочного сырья: ValueType.LIST, Диетический продукт: ValueType.STRING, Рекомендации по употреблению: ValueType.STRING, Содержит ГМО: ValueType.LIST, Содержит пальмовое масло: ValueType.LIST, Термическая обработка: ValueType.LIST, Жиры: ValueType.NUMBER, Белки: ValueType.NUMBER, Углеводы: ValueType.NUMBER, Тип молока: ValueType.LIST, Особенности питания: ValueType.LIST, Содержит заменитель молочного жира: ValueType.LIST, Органический продукт: ValueType.LIST, На количество продукта: ValueType.LIST, Номер тех. регламента, стандарта на продукцию: ValueType.LIST, Продукция для детского питания: ValueType.LIST, Вид продукции ВетИС: ValueType.LIST, ГОСТ ВетИС: ValueType.STRING, Произведено по ГОСТ ВетИС: ValueType.LIST, Товар с переменным количеством: ValueType.LIST, Диапазон веса, от: ValueType.NUMBER, Диапазон веса, до: ValueType.NUMBER, Свидетельство о государственной регистрации: ValueType.STRING, Подлежит ветеринарному контролю (надзору): ValueType.LIST, Срок хранения до 40 суток (включительно): ValueType.LIST, Специализированная пищевая продукция: ValueType.LIST, Количество единиц употребления в потребительской упаковке: ValueType.NUMBER, ХС-производитель: ValueType.STRING, Предприятие-производитель: ValueType.STRING, Объем/вес нетто: ValueType.NUMBER, Единица измерения объема/веса нетто: ValueType.LIST, Автоприкрепление сведений по ДС/СС к кодам идентификации: ValueType.LIST, Требования подтверждения соответствия отсутствуют; основание: ValueType.STRING, Тип продукции ВетИС: ValueType.LIST, Продукция ВетИС: ValueType.LIST, Категория продукции ВетИС: ValueType.LIST, Жирность: ValueType.LIST, Тип упаковки: ValueType.LIST, Единицы измерения: ValueType.LIST, Глубина упаковки, мм: ValueType.NUMBER, Материал упаковки: ValueType.LIST, Ширина упаковки, мм: ValueType.NUMBER, Максимальная температура (хран.): ValueType.NUMBER, Энергетическая ценность, кДж: ValueType.NUMBER, Высота упаковки, мм: ValueType.NUMBER, Номер ГОСТ, ТУ, СТО, спецификации: ValueType.STRING, BRICK Code GPC GS1: ValueType.STRING, Декларация соответствия: ValueType.STRING, Набор: ValueType.STRING, Суббренд: ValueType.STRING, Сертификат соответствия: ValueType.STRING, Завод-изготовитель, фабрика: ValueType.STRING, Состав: ValueType.STRING, Это комплект: ValueType.STRING, Импортер: ValueType.STRING, Страна происхождения: ValueType.LIST, Обогащающие компоненты: ValueType.LIST, Энергетическая ценность, ккал: ValueType.NUMBER, Назначение упаковки: ValueType.LIST, Минимальная температура (хран.): ValueType.NUMBER, Относительная влажность, до: ValueType.NUMBER, Относительная влажность, от: ValueType.NUMBER, Вес брутто, г: ValueType.NUMBER, Тип стандарта на продукцию (ГОСТ, ТУ, СТО, спецификация): ValueType.LIST, Срок годности, сут/дн: ValueType.NUMBER, Наименование товара в учетной системе поставщика: ValueType.STRING, Код товара в учетной системе поставщика: ValueType.STRING, Маркетинговое описание: ValueType.STRING, Уникальные характеристики товара (описание): ValueType.STRING, Локация Завод-изготовителя, фабрики: ValueType.LIST, Тип молочного продукта: ValueType.LIST, Происхождение молочного сырья: ValueType.LIST, Диетический продукт: ValueType.STRING, Рекомендации по употреблению: ValueType.STRING, Содержит ГМО: ValueType.LIST, Содержит пальмовое масло: ValueType.LIST, Термическая обработка: ValueType.LIST, Жиры: ValueType.NUMBER, Белки: ValueType.NUMBER, Углеводы: ValueType.NUMBER, Тип молока: ValueType.LIST, Особенности питания: ValueType.LIST, Содержит заменитель молочного жира: ValueType.LIST, Органический продукт: ValueType.LIST, На количество продукта: ValueType.LIST, Номер тех. регламента, стандарта на продукцию: ValueType.LIST, Продукция для детского питания: ValueType.LIST, Вид продукции ВетИС: ValueType.LIST, ГОСТ ВетИС: ValueType.STRING, Произведено по ГОСТ ВетИС: ValueType.LIST, Товар с переменным количеством: ValueType.LIST, Диапазон веса, от: ValueType.NUMBER, Диапазон веса, до: ValueType.NUMBER, Свидетельство о государственной регистрации: ValueType.STRING, Подлежит ветеринарному контролю (надзору): ValueType.LIST, Срок хранения до 40 суток (включительно): ValueType.LIST, Специализированная пищевая продукция: ValueType.LIST, Количество единиц употребления в потребительской упаковке: ValueType.NUMBER, ХС-производитель: ValueType.STRING, Предприятие-производитель: ValueType.STRING, Объем/вес нетто: ValueType.NUMBER, Единица измерения объема/веса нетто: ValueType.LIST, Автоприкрепление сведений по ДС/СС к кодам идентификации: ValueType.LIST, Требования подтверждения соответствия отсутствуют; основание: ValueType.STRING, Тип продукции ВетИС: ValueType.LIST, Продукция ВетИС: ValueType.LIST, Категория продукции ВетИС: ValueType.LIST, Жирность: ValueType.LIST, Тип упаковки: ValueType.LIST, Единицы измерения: ValueType.LIST, Глубина упаковки, мм: ValueType.NUMBER, Материал упаковки: ValueType.LIST, Ширина упаковки, мм: ValueType.NUMBER, Максимальная температура (хран.): ValueType.NUMBER, Энергетическая ценность, кДж: ValueType.NUMBER, Высота упаковки, мм: ValueType.NUMBER, Номер ГОСТ, ТУ, СТО, спецификации: ValueType.STRING, BRICK Code GPC GS1: ValueType.STRING, Декларация соответствия: ValueType.STRING, Набор: ValueType.STRING, Суббренд: ValueType.STRING, Сертификат соответствия: ValueType.STRING, Завод-изготовитель, фабрика: ValueType.STRING, Состав: ValueType.STRING, Это комплект: ValueType.STRING, Импортер: ValueType.STRING, Страна происхождения: ValueType.LIST, Обогащающие компоненты: ValueType.LIST, Энергетическая ценность, ккал: ValueType.NUMBER, Назначение упаковки: ValueType.LIST, Минимальная температура (хран.): ValueType.NUMBER, Относительная влажность, до: ValueType.NUMBER, Относительная влажность, от: ValueType.NUMBER, Вес брутто, г: ValueType.NUMBER, Тип стандарта на продукцию (ГОСТ, ТУ, СТО, спецификация): ValueType.LIST, Срок годности, сут/дн: ValueType.NUMBER, Наименование товара в учетной системе поставщика: ValueType.STRING, Код товара в учетной системе поставщика: ValueType.STRING, Маркетинговое описание: ValueType.STRING, Уникальные характеристики товара (описание): ValueType.STRING, Локация Завод-изготовителя, фабрики: ValueType.LIST, Тип молочного продукта: ValueType.LIST, Происхождение молочного сырья: ValueType.LIST, Диетический продукт: ValueType.STRING, Рекомендации по употреблению: ValueType.STRING, Содержит ГМО: ValueType.LIST, Содержит пальмовое масло: ValueType.LIST, Термическая обработка: ValueType.LIST, Жиры: ValueType.NUMBER, Белки: ValueType.NUMBER, Углеводы: ValueType.NUMBER, Тип молока: ValueType.LIST, Особенности питания: ValueType.LIST, Содержит заменитель молочного жира: ValueType.LIST, Органический продукт: ValueType.LIST, На количество продукта: ValueType.LIST, Номер тех. регламента, стандарта на продукцию: ValueType.LIST, Продукция для детского питания: ValueType.LIST, Вид продукции ВетИС: ValueType.LIST, ГОСТ ВетИС: ValueType.STRING, Произведено по ГОСТ ВетИС: ValueType.LIST, Товар с переменным количеством: ValueType.LIST, Диапазон веса, от: ValueType.NUMBER, Диапазон веса, до: ValueType.NUMBER, Свидетельство о государственной регистрации: ValueType.STRING, Подлежит ветеринарному контролю (надзору): ValueType.LIST, Срок хранения до 40 суток (включительно): ValueType.LIST, Специализированная пищевая продукция: ValueType.LIST, Количество единиц употребления в потребительской упаковке: ValueType.NUMBER, ХС-производитель: ValueType.STRING, Предприятие-производитель: ValueType.STRING, Объем/вес нетто: ValueType.NUMBER, Единица измерения объема/веса нетто: ValueType.LIST, Автоприкрепление сведений по ДС/СС к кодам идентификации: ValueType.LIST, Требования подтверждения соответствия отсутствуют; основание: ValueType.STRING, Тип продукции ВетИС: ValueType.LIST, Продукция ВетИС: ValueType.LIST, Категория продукции ВетИС: ValueType.LIST, Жирность: ValueType.LIST, Тип упаковки: ValueType.LIST, Единицы измерения: ValueType.LIST, Глубина упаковки, мм: ValueType.NUMBER, Материал упаковки: ValueType.LIST, Ширина упаковки, мм: ValueType.NUMBER, Максимальная температура (хран.): ValueType.NUMBER, Энергетическая ценность, кДж: ValueType.NUMBER, Высота упаковки, мм: ValueType.NUMBER, Номер ГОСТ, ТУ, СТО, спецификации: ValueType.STRING, BRICK Code GPC GS1: ValueType.STRING, Декларация соответствия: ValueType.STRING, Набор: ValueType.STRING, Суббренд: ValueType.STRING, Сертификат соответствия: ValueType.STRING, Завод-изготовитель, фабрика: ValueType.STRING, Состав: ValueType.STRING, Это комплект: ValueType.STRING, Импортер: ValueType.STRING, Страна происхождения: ValueType.LIST, Обогащающие компоненты: ValueType.LIST, Энергетическая ценность, ккал: ValueType.NUMBER, Назначение упаковки: ValueType.LIST, Минимальная температура (хран.): ValueType.NUMBER, Относительная влажность, до: ValueType.NUMBER, Относительная влажность, от: ValueType.NUMBER, Вес брутто, г: ValueType.NUMBER, Тип стандарта на продукцию (ГОСТ, ТУ, СТО, спецификация): ValueType.LIST, Срок годности, сут/дн: ValueType.NUMBER, Наименование товара в учетной системе поставщика: ValueType.STRING, Код товара в учетной системе поставщика: ValueType.STRING, Маркетинговое описание: ValueType.STRING, Уникальные характеристики товара (описание): ValueType.STRING, Локация Завод-изготовителя, фабрики: ValueType.LIST, Тип молочного продукта: ValueType.LIST, Происхождение молочного сырья: ValueType.LIST, Диетический продукт: ValueType.STRING, Рекомендации по употреблению: ValueType.STRING, Содержит ГМО: ValueType.LIST, Содержит пальмовое масло: ValueType.LIST, Термическая обработка: ValueType.LIST, Жиры: ValueType.NUMBER, Белки: ValueType.NUMBER, Углеводы: ValueType.NUMBER, Тип молока: ValueType.LIST, Особенности питания: ValueType.LIST, Содержит заменитель молочного жира: ValueType.LIST, Органический продукт: ValueType.LIST, На количество продукта: ValueType.LIST, Номер тех. регламента, стандарта на продукцию: ValueType.LIST, Продукция для детского питания: ValueType.LIST, Вид продукции ВетИС: ValueType.LIST, ГОСТ ВетИС: ValueType.STRING, Произведено по ГОСТ ВетИС: ValueType.LIST, Товар с переменным количеством: ValueType.LIST, Диапазон веса, от: ValueType.NUMBER, Диапазон веса, до: ValueType.NUMBER, Свидетельство о государственной регистрации: ValueType.STRING, Подлежит ветеринарному контролю (надзору): ValueType.LIST, Срок хранения до 40 суток (включительно): ValueType.LIST, Специализированная пищевая продукция: ValueType.LIST, Количество единиц употребления в потребительской упаковке: ValueType.NUMBER, ХС-производитель: ValueType.STRING, Предприятие-производитель: ValueType.STRING, Объем/вес нетто: ValueType.NUMBER, Единица измерения объема/веса нетто: ValueType.LIST, Автоприкрепление сведений по ДС/СС к кодам идентификации: ValueType.LIST, Требования подтверждения соответствия отсутствуют; основание: ValueType.STRING, Тип продукции ВетИС: ValueType.LIST, Продукция ВетИС: ValueType.LIST, Категория продукции ВетИС: ValueType.LIST, Жирность: ValueType.LIST, Тип упаковки: ValueType.LIST, Единицы измерения: ValueType.LIST, Глубина упаковки, мм: ValueType.NUMBER, Материал упаковки: ValueType.LIST, Ширина упаковки, мм: ValueType.NUMBER, Максимальная температура (хран.): ValueType.NUMBER, Энергетическая ценность, кДж: ValueType.NUMBER, Высота упаковки, мм: ValueType.NUMBER, Номер ГОСТ, ТУ, СТО, спецификации: ValueType.STRING, BRICK Code GPC GS1: ValueType.STRING, Декларация соответствия: ValueType.STRING, Набор: ValueType.STRING, Суббренд: ValueType.STRING, Сертификат соответствия: ValueType.STRING, Завод-изготовитель, фабрика: ValueType.STRING, Состав: ValueType.STRING, Это комплект: ValueType.STRING, Импортер: ValueType.STRING, Страна происхождения: ValueType.LIST, Обогащающие компоненты: ValueType.LIST, Энергетическая ценность, ккал: ValueType.NUMBER, Назначение упаковки: ValueType.LIST, Минимальная температура (хран.): ValueType.NUMBER, Относительная влажность, до: ValueType.NUMBER, Относительная влажность, от: ValueType.NUMBER, Вес брутто, г: ValueType.NUMBER, Тип стандарта на продукцию (ГОСТ, ТУ, СТО, спецификация): ValueType.LIST, Срок годности, сут/дн: ValueType.NUMBER, Наименование товара в учетной системе поставщика: ValueType.STRING, Код товара в учетной системе поставщика: ValueType.STRING, Маркетинговое описание: ValueType.STRING, Уникальные характеристики товара (описание): ValueType.STRING, Локация Завод-изготовителя, фабрики: ValueType.LIST, Тип молочного продукта: ValueType.LIST, Происхождение молочного сырья: ValueType.LIST, Вкус молочного продукта: ValueType.LIST, Диетический продукт: ValueType.STRING, Рекомендации по употреблению: ValueType.STRING, Содержит ГМО: ValueType.LIST, Содержит пальмовое масло: ValueType.LIST, Жиры: ValueType.NUMBER, Белки: ValueType.NUMBER, Углеводы: ValueType.NUMBER, Тип молока: ValueType.LIST, Особенности питания: ValueType.LIST, Содержит заменитель молочного жира: ValueType.LIST, Органический продукт: ValueType.LIST, На количество продукта: ValueType.LIST, Номер тех. регламента, стандарта на продукцию: ValueType.LIST, Продукция для детского питания: ValueType.LIST, Вид продукции ВетИС: ValueType.LIST, ГОСТ ВетИС: ValueType.STRING, Произведено по ГОСТ ВетИС: ValueType.LIST, Товар с переменным количеством: ValueType.LIST, Диапазон веса, от: ValueType.NUMBER, Диапазон веса, до: ValueType.NUMBER, Свидетельство о государственной регистрации: ValueType.STRING, Подлежит ветеринарному контролю (надзору): ValueType.LIST, Срок хранения до 40 суток (включительно): ValueType.LIST, Специализированная пищевая продукция: ValueType.LIST, Количество единиц употребления в потребительской упаковке: ValueType.NUMBER, ХС-производитель: ValueType.STRING, Предприятие-производитель: ValueType.STRING, Объем/вес нетто: ValueType.NUMBER, Единица измерения объема/веса нетто: ValueType.LIST, Автоприкрепление сведений по ДС/СС к кодам идентификации: ValueType.LIST, Требования подтверждения соответствия отсутствуют; основание: ValueType.STRING, Тип продукции ВетИС: ValueType.LIST, Продукция ВетИС: ValueType.LIST, Категория продукции ВетИС: ValueType.LIST, Жирность: ValueType.LIST, Тип упаковки: ValueType.LIST, Единицы измерения: ValueType.LIST, Глубина упаковки, мм: ValueType.NUMBER, Материал упаковки: ValueType.LIST, Ширина упаковки, мм: ValueType.NUMBER, Максимальная температура (хран.): ValueType.NUMBER, Энергетическая ценность, кДж: ValueType.NUMBER, Высота упаковки, мм: ValueType.NUMBER, Номер ГОСТ, ТУ, СТО, спецификации: ValueType.STRING, BRICK Code GPC GS1: ValueType.STRING, Декларация соответствия: ValueType.STRING, Набор: ValueType.STRING, Суббренд: ValueType.STRING, Сертификат соответствия: ValueType.STRING, Завод-изготовитель, фабрика: ValueType.STRING, Состав: ValueType.STRING, Это комплект: ValueType.STRING, Импортер: ValueType.STRING, Страна происхождения: ValueType.LIST, Обогащающие компоненты: ValueType.LIST, Энергетическая ценность, ккал: ValueType.NUMBER, Назначение упаковки: ValueType.LIST, Минимальная температура (хран.): ValueType.NUMBER, Относительная влажность, до: ValueType.NUMBER, Относительная влажность, от: ValueType.NUMBER, Вес брутто, г: ValueType.NUMBER, Тип стандарта на продукцию (ГОСТ, ТУ, СТО, спецификация): ValueType.LIST, Срок годности, сут/дн: ValueType.NUMBER, Наименование товара в учетной системе поставщика: ValueType.STRING, Код товара в учетной системе поставщика: ValueType.STRING, Маркетинговое описание: ValueType.STRING, Уникальные характеристики товара (описание): ValueType.STRING, Локация Завод-изготовителя, фабрики: ValueType.LIST, Тип молочного продукта: ValueType.LIST, Происхождение молочного сырья: ValueType.LIST, Диетический продукт: ValueType.STRING, Рекомендации по употреблению: ValueType.STRING, Содержит ГМО: ValueType.LIST, Содержит пальмовое масло: ValueType.LIST, Термическая обработка: ValueType.LIST, Жиры: ValueType.NUMBER, Белки: ValueType.NUMBER, Углеводы: ValueType.NUMBER, Тип молока: ValueType.LIST, Особенности питания: ValueType.LIST, Содержит заменитель молочного жира: ValueType.LIST, Органический продукт: ValueType.LIST, На количество продукта: ValueType.LIST, Номер тех. регламента, стандарта на продукцию: ValueType.LIST, Продукция для детского питания: ValueType.LIST, Вид продукции ВетИС: ValueType.LIST, ГОСТ ВетИС: ValueType.STRING, Произведено по ГОСТ ВетИС: ValueType.LIST, Товар с переменным количеством: ValueType.LIST, Диапазон веса, от: ValueType.NUMBER, Диапазон веса, до: ValueType.NUMBER, Свидетельство о государственной регистрации: ValueType.STRING, Подлежит ветеринарному контролю (надзору): ValueType.LIST, Срок хранения до 40 суток (включительно): ValueType.LIST, Специализированная пищевая продукция: ValueType.LIST, Количество единиц употребления в потребительской упаковке: ValueType.NUMBER, ХС-производитель: ValueType.STRING, Предприятие-производитель: ValueType.STRING, Объем/вес нетто: ValueType.NUMBER, Единица измерения объема/веса нетто: ValueType.LIST, Автоприкрепление сведений по ДС/СС к кодам идентификации: ValueType.LIST, Требования подтверждения соответствия отсутствуют; основание: ValueType.STRING, Тип продукции ВетИС: ValueType.LIST, Продукция ВетИС: ValueType.LIST, Категория продукции ВетИС: ValueType.LIST, Жирность: ValueType.LIST, Тип упаковки: ValueType.LIST, Единицы измерения: ValueType.LIST, Глубина упаковки, мм: ValueType.NUMBER, Материал упаковки: ValueType.LIST, Ширина упаковки, мм: ValueType.NUMBER, Максимальная температура (хран.): ValueType.NUMBER, Энергетическая ценность, кДж: ValueType.NUMBER, Высота упаковки, мм: ValueType.NUMBER, Номер ГОСТ, ТУ, СТО, спецификации: ValueType.STRING, BRICK Code GPC GS1: ValueType.STRING, Декларация соответствия: ValueType.STRING, Набор: ValueType.STRING, Суббренд: ValueType.STRING, Сертификат соответствия: ValueType.STRING, Завод-изготовитель, фабрика: ValueType.STRING, Состав: ValueType.STRING, Это комплект: ValueType.STRING, Импортер: ValueType.STRING, Страна происхождения: ValueType.LIST, Основная номенклатура: ValueType.LIST, Моножественное разделение при продаже: ValueType.STRING]
+categories: [Молочная продукция, Пиво - другое, Молоко коровье пастеризованное, Молоко коровье ультрапастеризованное, Молоко коровье топленое, Молоко коровье - другое, Творог классический, Сметана, <Без категории>]
+units: [Штука=796, Килограмм=166, Литр (Кубический дециметр)=112]
+
+*** Groups ***
+Сыродавленная продукция: []
+Сыры: [Сыры штучка: [], Мягкие: [], Сулугуни: [], Твердые и полутвердые: []]
+-- Сыры штучка: []
+-- Мягкие: []
+-- Сулугуни: []
+-- Твердые и полутвердые: []
+Напитки: [Лимонады: [], Вода: [], Квас: [], Компот/Морс: [], Соки/Нектары: [], Пиво: [], Рыба/Морепродукты: []]
+-- Лимонады: []
+-- Вода: []
+-- Квас: []
+-- Компот/Морс: []
+-- Соки/Нектары: []
+-- Пиво: []
+-- Рыба/Морепродукты: []
+Полуфабрикаты/Маринады: []
+Крупа/рис/макароны/мука: []
+Бакалея: [Чай/Кофе: [], Консервация: [], Мёд/варенье/джем/сгущенка: [], Соусы/маринады/специи: [], Хлеб: [], Детское питание: [], Паштеты/морепродукты/рыбные консервы: []]
+-- Чай/Кофе: []
+-- Консервация: []
+-- Мёд/варенье/джем/сгущенка: []
+-- Соусы/маринады/специи: []
+-- Хлеб: []
+-- Детское питание: []
+-- Паштеты/морепродукты/рыбные консервы: []
+Кондитерские изделия: []
+Масло растительное/оливковое: [Масло оливковое: []]
+-- Масло оливковое: []
+Заморозка: [Супы: [], Вторые блюда: [], Пельмени/Хинкали/Манты/Вареники: [], Овощи/Фрукты: [], Блины/Оладьи/Выпечка: []]
+-- Супы: []
+-- Вторые блюда: []
+-- Пельмени/Хинкали/Манты/Вареники: []
+-- Овощи/Фрукты: []
+-- Блины/Оладьи/Выпечка: []
+Колбасный отдел: [Алексеев ИП: [], Простор: [], Универсал: [], "Аркадия" (фабрика качества): [], "Ломоносовский мясокомбинат": [], Дом Ивановых: [], Лебедева: [], Мир колбас: [], Продсоюз: [], "Продстар": [], Агромясопром: []]
+-- Алексеев ИП: []
+-- Простор: []
+-- Универсал: []
+-- "Аркадия" (фабрика качества): []
+-- "Ломоносовский мясокомбинат": []
+-- Дом Ивановых: []
+-- Лебедева: []
+-- Мир колбас: []
+-- Продсоюз: []
+-- "Продстар": []
+-- Агромясопром: []
+Яйцо: []
+Соленья: []
+Сухофтрукты: []
+Фрукты, овощи, зелень: []
+Мясо: [Говядина: [], Кура: [], Свинина: [], Баранина: [], Наша ферма: [], Индейка/Утка/Гусь/Кролик: [], Кости: [], Фарш: []]
+-- Говядина: []
+-- Кура: []
+-- Свинина: []
+-- Баранина: []
+-- Наша ферма: []
+-- Индейка/Утка/Гусь/Кролик: []
+-- Кости: []
+-- Фарш: []
+Молочная продукция: [Новые Черницы: [], Масло весовое: [], Молоко/сливки/йогурт: [], Сметана: [], Творог: [], Майонез: [], Штучка: [Молоко штучка: [], Сметана штучка: [], Творог штучка: [], Йогурт/Сливки/Мол. коктейли: [], Кисломолочная продукция: [], Масло штучка: [], Десерты: []]]
+-- Новые Черницы: []
+-- Масло весовое: []
+-- Молоко/сливки/йогурт: []
+-- Сметана: []
+-- Творог: []
+-- Майонез: []
+-- Штучка: [Молоко штучка: [], Сметана штучка: [], Творог штучка: [], Йогурт/Сливки/Мол. коктейли: [], Кисломолочная продукция: [], Масло штучка: [], Десерты: []]
+Мороженое: [Другое мороженое: [], CosmoIce: [], КизК: [], Любони: []]
+-- Другое мороженое: []
+-- CosmoIce: []
+-- КизК: []
+-- Любони: []
+Хоз. расходы : [НЕ ИСПОЛЬЗУЕТСЯ: [], Хоз. расходы для магазина: [], Хоз. товары для продажи: []]
+-- НЕ ИСПОЛЬЗУЕТСЯ: []
+-- Хоз. расходы для магазина: []
+-- Хоз. товары для продажи: []
+
+*** Properties ***
+Энергетическая ценность, ккал: ValueType.NUMBER
+Крепость: ValueType.NUMBER
+Фильтрация: ValueType.LIST
+Пастеризация: ValueType.LIST
+Ограничения: ValueType.STRING
+Предупреждения: ValueType.STRING
+Минимальная температура (хран.): ValueType.NUMBER
+Относительная влажность, до: ValueType.NUMBER
+Относительная влажность, от: ValueType.NUMBER
+Тип стандарта на продукцию (ГОСТ, ТУ, СТО, спецификация): ValueType.LIST
+Срок годности, сут/дн: ValueType.NUMBER
+Наименование товара в учетной системе поставщика: ValueType.STRING
+Код товара в учетной системе поставщика: ValueType.STRING
+Маркетинговое описание: ValueType.STRING
+Уникальные характеристики товара (описание): ValueType.STRING
+Локация Завод-изготовителя, фабрики: ValueType.LIST
+Рекомендации по употреблению: ValueType.STRING
+Углеводы: ValueType.NUMBER
+На количество продукта: ValueType.LIST
+Номер тех. регламента, стандарта на продукцию: ValueType.LIST
+Тип слабоалкогольного напитка: ValueType.LIST
+Код продукции в ЕГАИС: ValueType.STRING
+Свидетельство о государственной регистрации: ValueType.STRING
+Характеристика упаковки: ValueType.LIST
+Предельный срок реализации после вскрытия кега: ValueType.NUMBER
+Объем потребительской единицы, л: ValueType.NUMBER
+Код вида продукции в ЕГАИС: ValueType.LIST
+Автоприкрепление сведений по ДС/СС к кодам идентификации: ValueType.LIST
+Единица измерения крепости: ValueType.LIST
+Тип упаковки: ValueType.LIST
+Глубина упаковки, мм: ValueType.NUMBER
+Материал упаковки: ValueType.LIST
+Ширина упаковки, мм: ValueType.NUMBER
+Максимальная температура (хран.): ValueType.NUMBER
+Энергетическая ценность, кДж: ValueType.NUMBER
+Высота упаковки, мм: ValueType.NUMBER
+Номер ГОСТ, ТУ, СТО, спецификации: ValueType.STRING
+BRICK Code GPC GS1: ValueType.STRING
+Декларация соответствия: ValueType.STRING
+Набор: ValueType.STRING
+Суббренд: ValueType.STRING
+Сертификат соответствия: ValueType.STRING
+Завод-изготовитель, фабрика: ValueType.STRING
+Вес БРУТТО, кг: ValueType.NUMBER
+Состав: ValueType.STRING
+Это комплект: ValueType.STRING
+Импортер: ValueType.STRING
+Страна происхождения: ValueType.LIST
+Обогащающие компоненты: ValueType.LIST
+Энергетическая ценность, ккал: ValueType.NUMBER
+Назначение упаковки: ValueType.LIST
+Минимальная температура (хран.): ValueType.NUMBER
+Относительная влажность, до: ValueType.NUMBER
+Относительная влажность, от: ValueType.NUMBER
+Вес брутто, г: ValueType.NUMBER
+Тип стандарта на продукцию (ГОСТ, ТУ, СТО, спецификация): ValueType.LIST
+Срок годности, сут/дн: ValueType.NUMBER
+Наименование товара в учетной системе поставщика: ValueType.STRING
+Код товара в учетной системе поставщика: ValueType.STRING
+Маркетинговое описание: ValueType.STRING
+Уникальные характеристики товара (описание): ValueType.STRING
+Локация Завод-изготовителя, фабрики: ValueType.LIST
+Тип молочного продукта: ValueType.LIST
+Происхождение молочного сырья: ValueType.LIST
+Диетический продукт: ValueType.STRING
+Рекомендации по употреблению: ValueType.STRING
+Содержит ГМО: ValueType.LIST
+Содержит пальмовое масло: ValueType.LIST
+Термическая обработка: ValueType.LIST
+Жиры: ValueType.NUMBER
+Белки: ValueType.NUMBER
+Углеводы: ValueType.NUMBER
+Тип молока: ValueType.LIST
+Особенности питания: ValueType.LIST
+Содержит заменитель молочного жира: ValueType.LIST
+Органический продукт: ValueType.LIST
+На количество продукта: ValueType.LIST
+Номер тех. регламента, стандарта на продукцию: ValueType.LIST
+Продукция для детского питания: ValueType.LIST
+Вид продукции ВетИС: ValueType.LIST
+ГОСТ ВетИС: ValueType.STRING
+Произведено по ГОСТ ВетИС: ValueType.LIST
+Товар с переменным количеством: ValueType.LIST
+Диапазон веса, от: ValueType.NUMBER
+Диапазон веса, до: ValueType.NUMBER
+Свидетельство о государственной регистрации: ValueType.STRING
+Подлежит ветеринарному контролю (надзору): ValueType.LIST
+Срок хранения до 40 суток (включительно): ValueType.LIST
+Специализированная пищевая продукция: ValueType.LIST
+Количество единиц употребления в потребительской упаковке: ValueType.NUMBER
+ХС-производитель: ValueType.STRING
+Предприятие-производитель: ValueType.STRING
+Объем/вес нетто: ValueType.NUMBER
+Единица измерения объема/веса нетто: ValueType.LIST
+Автоприкрепление сведений по ДС/СС к кодам идентификации: ValueType.LIST
+Требования подтверждения соответствия отсутствуют; основание: ValueType.STRING
+Тип продукции ВетИС: ValueType.LIST
+Продукция ВетИС: ValueType.LIST
+Категория продукции ВетИС: ValueType.LIST
+Жирность: ValueType.LIST
+Тип упаковки: ValueType.LIST
+Единицы измерения: ValueType.LIST
+Глубина упаковки, мм: ValueType.NUMBER
+Материал упаковки: ValueType.LIST
+Ширина упаковки, мм: ValueType.NUMBER
+Максимальная температура (хран.): ValueType.NUMBER
+Энергетическая ценность, кДж: ValueType.NUMBER
+Высота упаковки, мм: ValueType.NUMBER
+Номер ГОСТ, ТУ, СТО, спецификации: ValueType.STRING
+BRICK Code GPC GS1: ValueType.STRING
+Декларация соответствия: ValueType.STRING
+Набор: ValueType.STRING
+Суббренд: ValueType.STRING
+Сертификат соответствия: ValueType.STRING
+Завод-изготовитель, фабрика: ValueType.STRING
+Состав: ValueType.STRING
+Это комплект: ValueType.STRING
+Импортер: ValueType.STRING
+Страна происхождения: ValueType.LIST
+Обогащающие компоненты: ValueType.LIST
+Энергетическая ценность, ккал: ValueType.NUMBER
+Назначение упаковки: ValueType.LIST
+Минимальная температура (хран.): ValueType.NUMBER
+Относительная влажность, до: ValueType.NUMBER
+Относительная влажность, от: ValueType.NUMBER
+Вес брутто, г: ValueType.NUMBER
+Тип стандарта на продукцию (ГОСТ, ТУ, СТО, спецификация): ValueType.LIST
+Срок годности, сут/дн: ValueType.NUMBER
+Наименование товара в учетной системе поставщика: ValueType.STRING
+Код товара в учетной системе поставщика: ValueType.STRING
+Маркетинговое описание: ValueType.STRING
+Уникальные характеристики товара (описание): ValueType.STRING
+Локация Завод-изготовителя, фабрики: ValueType.LIST
+Тип молочного продукта: ValueType.LIST
+Происхождение молочного сырья: ValueType.LIST
+Диетический продукт: ValueType.STRING
+Рекомендации по употреблению: ValueType.STRING
+Содержит ГМО: ValueType.LIST
+Содержит пальмовое масло: ValueType.LIST
+Термическая обработка: ValueType.LIST
+Жиры: ValueType.NUMBER
+Белки: ValueType.NUMBER
+Углеводы: ValueType.NUMBER
+Тип молока: ValueType.LIST
+Особенности питания: ValueType.LIST
+Содержит заменитель молочного жира: ValueType.LIST
+Органический продукт: ValueType.LIST
+На количество продукта: ValueType.LIST
+Номер тех. регламента, стандарта на продукцию: ValueType.LIST
+Продукция для детского питания: ValueType.LIST
+Вид продукции ВетИС: ValueType.LIST
+ГОСТ ВетИС: ValueType.STRING
+Произведено по ГОСТ ВетИС: ValueType.LIST
+Товар с переменным количеством: ValueType.LIST
+Диапазон веса, от: ValueType.NUMBER
+Диапазон веса, до: ValueType.NUMBER
+Свидетельство о государственной регистрации: ValueType.STRING
+Подлежит ветеринарному контролю (надзору): ValueType.LIST
+Срок хранения до 40 суток (включительно): ValueType.LIST
+Специализированная пищевая продукция: ValueType.LIST
+Количество единиц употребления в потребительской упаковке: ValueType.NUMBER
+ХС-производитель: ValueType.STRING
+Предприятие-производитель: ValueType.STRING
+Объем/вес нетто: ValueType.NUMBER
+Единица измерения объема/веса нетто: ValueType.LIST
+Автоприкрепление сведений по ДС/СС к кодам идентификации: ValueType.LIST
+Требования подтверждения соответствия отсутствуют; основание: ValueType.STRING
+Тип продукции ВетИС: ValueType.LIST
+Продукция ВетИС: ValueType.LIST
+Категория продукции ВетИС: ValueType.LIST
+Жирность: ValueType.LIST
+Тип упаковки: ValueType.LIST
+Единицы измерения: ValueType.LIST
+Глубина упаковки, мм: ValueType.NUMBER
+Материал упаковки: ValueType.LIST
+Ширина упаковки, мм: ValueType.NUMBER
+Максимальная температура (хран.): ValueType.NUMBER
+Энергетическая ценность, кДж: ValueType.NUMBER
+Высота упаковки, мм: ValueType.NUMBER
+Номер ГОСТ, ТУ, СТО, спецификации: ValueType.STRING
+BRICK Code GPC GS1: ValueType.STRING
+Декларация соответствия: ValueType.STRING
+Набор: ValueType.STRING
+Суббренд: ValueType.STRING
+Сертификат соответствия: ValueType.STRING
+Завод-изготовитель, фабрика: ValueType.STRING
+Состав: ValueType.STRING
+Это комплект: ValueType.STRING
+Импортер: ValueType.STRING
+Страна происхождения: ValueType.LIST
+Обогащающие компоненты: ValueType.LIST
+Энергетическая ценность, ккал: ValueType.NUMBER
+Назначение упаковки: ValueType.LIST
+Минимальная температура (хран.): ValueType.NUMBER
+Относительная влажность, до: ValueType.NUMBER
+Относительная влажность, от: ValueType.NUMBER
+Вес брутто, г: ValueType.NUMBER
+Тип стандарта на продукцию (ГОСТ, ТУ, СТО, спецификация): ValueType.LIST
+Срок годности, сут/дн: ValueType.NUMBER
+Наименование товара в учетной системе поставщика: ValueType.STRING
+Код товара в учетной системе поставщика: ValueType.STRING
+Маркетинговое описание: ValueType.STRING
+Уникальные характеристики товара (описание): ValueType.STRING
+Локация Завод-изготовителя, фабрики: ValueType.LIST
+Тип молочного продукта: ValueType.LIST
+Происхождение молочного сырья: ValueType.LIST
+Диетический продукт: ValueType.STRING
+Рекомендации по употреблению: ValueType.STRING
+Содержит ГМО: ValueType.LIST
+Содержит пальмовое масло: ValueType.LIST
+Термическая обработка: ValueType.LIST
+Жиры: ValueType.NUMBER
+Белки: ValueType.NUMBER
+Углеводы: ValueType.NUMBER
+Тип молока: ValueType.LIST
+Особенности питания: ValueType.LIST
+Содержит заменитель молочного жира: ValueType.LIST
+Органический продукт: ValueType.LIST
+На количество продукта: ValueType.LIST
+Номер тех. регламента, стандарта на продукцию: ValueType.LIST
+Продукция для детского питания: ValueType.LIST
+Вид продукции ВетИС: ValueType.LIST
+ГОСТ ВетИС: ValueType.STRING
+Произведено по ГОСТ ВетИС: ValueType.LIST
+Товар с переменным количеством: ValueType.LIST
+Диапазон веса, от: ValueType.NUMBER
+Диапазон веса, до: ValueType.NUMBER
+Свидетельство о государственной регистрации: ValueType.STRING
+Подлежит ветеринарному контролю (надзору): ValueType.LIST
+Срок хранения до 40 суток (включительно): ValueType.LIST
+Специализированная пищевая продукция: ValueType.LIST
+Количество единиц употребления в потребительской упаковке: ValueType.NUMBER
+ХС-производитель: ValueType.STRING
+Предприятие-производитель: ValueType.STRING
+Объем/вес нетто: ValueType.NUMBER
+Единица измерения объема/веса нетто: ValueType.LIST
+Автоприкрепление сведений по ДС/СС к кодам идентификации: ValueType.LIST
+Требования подтверждения соответствия отсутствуют; основание: ValueType.STRING
+Тип продукции ВетИС: ValueType.LIST
+Продукция ВетИС: ValueType.LIST
+Категория продукции ВетИС: ValueType.LIST
+Жирность: ValueType.LIST
+Тип упаковки: ValueType.LIST
+Единицы измерения: ValueType.LIST
+Глубина упаковки, мм: ValueType.NUMBER
+Материал упаковки: ValueType.LIST
+Ширина упаковки, мм: ValueType.NUMBER
+Максимальная температура (хран.): ValueType.NUMBER
+Энергетическая ценность, кДж: ValueType.NUMBER
+Высота упаковки, мм: ValueType.NUMBER
+Номер ГОСТ, ТУ, СТО, спецификации: ValueType.STRING
+BRICK Code GPC GS1: ValueType.STRING
+Декларация соответствия: ValueType.STRING
+Набор: ValueType.STRING
+Суббренд: ValueType.STRING
+Сертификат соответствия: ValueType.STRING
+Завод-изготовитель, фабрика: ValueType.STRING
+Состав: ValueType.STRING
+Это комплект: ValueType.STRING
+Импортер: ValueType.STRING
+Страна происхождения: ValueType.LIST
+Обогащающие компоненты: ValueType.LIST
+Энергетическая ценность, ккал: ValueType.NUMBER
+Назначение упаковки: ValueType.LIST
+Минимальная температура (хран.): ValueType.NUMBER
+Относительная влажность, до: ValueType.NUMBER
+Относительная влажность, от: ValueType.NUMBER
+Вес брутто, г: ValueType.NUMBER
+Тип стандарта на продукцию (ГОСТ, ТУ, СТО, спецификация): ValueType.LIST
+Срок годности, сут/дн: ValueType.NUMBER
+Наименование товара в учетной системе поставщика: ValueType.STRING
+Код товара в учетной системе поставщика: ValueType.STRING
+Маркетинговое описание: ValueType.STRING
+Уникальные характеристики товара (описание): ValueType.STRING
+Локация Завод-изготовителя, фабрики: ValueType.LIST
+Тип молочного продукта: ValueType.LIST
+Происхождение молочного сырья: ValueType.LIST
+Диетический продукт: ValueType.STRING
+Рекомендации по употреблению: ValueType.STRING
+Содержит ГМО: ValueType.LIST
+Содержит пальмовое масло: ValueType.LIST
+Термическая обработка: ValueType.LIST
+Жиры: ValueType.NUMBER
+Белки: ValueType.NUMBER
+Углеводы: ValueType.NUMBER
+Тип молока: ValueType.LIST
+Особенности питания: ValueType.LIST
+Содержит заменитель молочного жира: ValueType.LIST
+Органический продукт: ValueType.LIST
+На количество продукта: ValueType.LIST
+Номер тех. регламента, стандарта на продукцию: ValueType.LIST
+Продукция для детского питания: ValueType.LIST
+Вид продукции ВетИС: ValueType.LIST
+ГОСТ ВетИС: ValueType.STRING
+Произведено по ГОСТ ВетИС: ValueType.LIST
+Товар с переменным количеством: ValueType.LIST
+Диапазон веса, от: ValueType.NUMBER
+Диапазон веса, до: ValueType.NUMBER
+Свидетельство о государственной регистрации: ValueType.STRING
+Подлежит ветеринарному контролю (надзору): ValueType.LIST
+Срок хранения до 40 суток (включительно): ValueType.LIST
+Специализированная пищевая продукция: ValueType.LIST
+Количество единиц употребления в потребительской упаковке: ValueType.NUMBER
+ХС-производитель: ValueType.STRING
+Предприятие-производитель: ValueType.STRING
+Объем/вес нетто: ValueType.NUMBER
+Единица измерения объема/веса нетто: ValueType.LIST
+Автоприкрепление сведений по ДС/СС к кодам идентификации: ValueType.LIST
+Требования подтверждения соответствия отсутствуют; основание: ValueType.STRING
+Тип продукции ВетИС: ValueType.LIST
+Продукция ВетИС: ValueType.LIST
+Категория продукции ВетИС: ValueType.LIST
+Жирность: ValueType.LIST
+Тип упаковки: ValueType.LIST
+Единицы измерения: ValueType.LIST
+Глубина упаковки, мм: ValueType.NUMBER
+Материал упаковки: ValueType.LIST
+Ширина упаковки, мм: ValueType.NUMBER
+Максимальная температура (хран.): ValueType.NUMBER
+Энергетическая ценность, кДж: ValueType.NUMBER
+Высота упаковки, мм: ValueType.NUMBER
+Номер ГОСТ, ТУ, СТО, спецификации: ValueType.STRING
+BRICK Code GPC GS1: ValueType.STRING
+Декларация соответствия: ValueType.STRING
+Набор: ValueType.STRING
+Суббренд: ValueType.STRING
+Сертификат соответствия: ValueType.STRING
+Завод-изготовитель, фабрика: ValueType.STRING
+Состав: ValueType.STRING
+Это комплект: ValueType.STRING
+Импортер: ValueType.STRING
+Страна происхождения: ValueType.LIST
+Обогащающие компоненты: ValueType.LIST
+Энергетическая ценность, ккал: ValueType.NUMBER
+Назначение упаковки: ValueType.LIST
+Минимальная температура (хран.): ValueType.NUMBER
+Относительная влажность, до: ValueType.NUMBER
+Относительная влажность, от: ValueType.NUMBER
+Вес брутто, г: ValueType.NUMBER
+Тип стандарта на продукцию (ГОСТ, ТУ, СТО, спецификация): ValueType.LIST
+Срок годности, сут/дн: ValueType.NUMBER
+Наименование товара в учетной системе поставщика: ValueType.STRING
+Код товара в учетной системе поставщика: ValueType.STRING
+Маркетинговое описание: ValueType.STRING
+Уникальные характеристики товара (описание): ValueType.STRING
+Локация Завод-изготовителя, фабрики: ValueType.LIST
+Тип молочного продукта: ValueType.LIST
+Происхождение молочного сырья: ValueType.LIST
+Вкус молочного продукта: ValueType.LIST
+Диетический продукт: ValueType.STRING
+Рекомендации по употреблению: ValueType.STRING
+Содержит ГМО: ValueType.LIST
+Содержит пальмовое масло: ValueType.LIST
+Жиры: ValueType.NUMBER
+Белки: ValueType.NUMBER
+Углеводы: ValueType.NUMBER
+Тип молока: ValueType.LIST
+Особенности питания: ValueType.LIST
+Содержит заменитель молочного жира: ValueType.LIST
+Органический продукт: ValueType.LIST
+На количество продукта: ValueType.LIST
+Номер тех. регламента, стандарта на продукцию: ValueType.LIST
+Продукция для детского питания: ValueType.LIST
+Вид продукции ВетИС: ValueType.LIST
+ГОСТ ВетИС: ValueType.STRING
+Произведено по ГОСТ ВетИС: ValueType.LIST
+Товар с переменным количеством: ValueType.LIST
+Диапазон веса, от: ValueType.NUMBER
+Диапазон веса, до: ValueType.NUMBER
+Свидетельство о государственной регистрации: ValueType.STRING
+Подлежит ветеринарному контролю (надзору): ValueType.LIST
+Срок хранения до 40 суток (включительно): ValueType.LIST
+Специализированная пищевая продукция: ValueType.LIST
+Количество единиц употребления в потребительской упаковке: ValueType.NUMBER
+ХС-производитель: ValueType.STRING
+Предприятие-производитель: ValueType.STRING
+Объем/вес нетто: ValueType.NUMBER
+Единица измерения объема/веса нетто: ValueType.LIST
+Автоприкрепление сведений по ДС/СС к кодам идентификации: ValueType.LIST
+Требования подтверждения соответствия отсутствуют; основание: ValueType.STRING
+Тип продукции ВетИС: ValueType.LIST
+Продукция ВетИС: ValueType.LIST
+Категория продукции ВетИС: ValueType.LIST
+Жирность: ValueType.LIST
+Тип упаковки: ValueType.LIST
+Единицы измерения: ValueType.LIST
+Глубина упаковки, мм: ValueType.NUMBER
+Материал упаковки: ValueType.LIST
+Ширина упаковки, мм: ValueType.NUMBER
+Максимальная температура (хран.): ValueType.NUMBER
+Энергетическая ценность, кДж: ValueType.NUMBER
+Высота упаковки, мм: ValueType.NUMBER
+Номер ГОСТ, ТУ, СТО, спецификации: ValueType.STRING
+BRICK Code GPC GS1: ValueType.STRING
+Декларация соответствия: ValueType.STRING
+Набор: ValueType.STRING
+Суббренд: ValueType.STRING
+Сертификат соответствия: ValueType.STRING
+Завод-изготовитель, фабрика: ValueType.STRING
+Состав: ValueType.STRING
+Это комплект: ValueType.STRING
+Импортер: ValueType.STRING
+Страна происхождения: ValueType.LIST
+Обогащающие компоненты: ValueType.LIST
+Энергетическая ценность, ккал: ValueType.NUMBER
+Назначение упаковки: ValueType.LIST
+Минимальная температура (хран.): ValueType.NUMBER
+Относительная влажность, до: ValueType.NUMBER
+Относительная влажность, от: ValueType.NUMBER
+Вес брутто, г: ValueType.NUMBER
+Тип стандарта на продукцию (ГОСТ, ТУ, СТО, спецификация): ValueType.LIST
+Срок годности, сут/дн: ValueType.NUMBER
+Наименование товара в учетной системе поставщика: ValueType.STRING
+Код товара в учетной системе поставщика: ValueType.STRING
+Маркетинговое описание: ValueType.STRING
+Уникальные характеристики товара (описание): ValueType.STRING
+Локация Завод-изготовителя, фабрики: ValueType.LIST
+Тип молочного продукта: ValueType.LIST
+Происхождение молочного сырья: ValueType.LIST
+Диетический продукт: ValueType.STRING
+Рекомендации по употреблению: ValueType.STRING
+Содержит ГМО: ValueType.LIST
+Содержит пальмовое масло: ValueType.LIST
+Термическая обработка: ValueType.LIST
+Жиры: ValueType.NUMBER
+Белки: ValueType.NUMBER
+Углеводы: ValueType.NUMBER
+Тип молока: ValueType.LIST
+Особенности питания: ValueType.LIST
+Содержит заменитель молочного жира: ValueType.LIST
+Органический продукт: ValueType.LIST
+На количество продукта: ValueType.LIST
+Номер тех. регламента, стандарта на продукцию: ValueType.LIST
+Продукция для детского питания: ValueType.LIST
+Вид продукции ВетИС: ValueType.LIST
+ГОСТ ВетИС: ValueType.STRING
+Произведено по ГОСТ ВетИС: ValueType.LIST
+Товар с переменным количеством: ValueType.LIST
+Диапазон веса, от: ValueType.NUMBER
+Диапазон веса, до: ValueType.NUMBER
+Свидетельство о государственной регистрации: ValueType.STRING
+Подлежит ветеринарному контролю (надзору): ValueType.LIST
+Срок хранения до 40 суток (включительно): ValueType.LIST
+Специализированная пищевая продукция: ValueType.LIST
+Количество единиц употребления в потребительской упаковке: ValueType.NUMBER
+ХС-производитель: ValueType.STRING
+Предприятие-производитель: ValueType.STRING
+Объем/вес нетто: ValueType.NUMBER
+Единица измерения объема/веса нетто: ValueType.LIST
+Автоприкрепление сведений по ДС/СС к кодам идентификации: ValueType.LIST
+Требования подтверждения соответствия отсутствуют; основание: ValueType.STRING
+Тип продукции ВетИС: ValueType.LIST
+Продукция ВетИС: ValueType.LIST
+Категория продукции ВетИС: ValueType.LIST
+Жирность: ValueType.LIST
+Тип упаковки: ValueType.LIST
+Единицы измерения: ValueType.LIST
+Глубина упаковки, мм: ValueType.NUMBER
+Материал упаковки: ValueType.LIST
+Ширина упаковки, мм: ValueType.NUMBER
+Максимальная температура (хран.): ValueType.NUMBER
+Энергетическая ценность, кДж: ValueType.NUMBER
+Высота упаковки, мм: ValueType.NUMBER
+Номер ГОСТ, ТУ, СТО, спецификации: ValueType.STRING
+BRICK Code GPC GS1: ValueType.STRING
+Декларация соответствия: ValueType.STRING
+Набор: ValueType.STRING
+Суббренд: ValueType.STRING
+Сертификат соответствия: ValueType.STRING
+Завод-изготовитель, фабрика: ValueType.STRING
+Состав: ValueType.STRING
+Это комплект: ValueType.STRING
+Импортер: ValueType.STRING
+Страна происхождения: ValueType.LIST
+Основная номенклатура: ValueType.LIST
+Моножественное разделение при продаже: ValueType.STRING
+
+*** Categories ***
+Молочная продукция
+Пиво - другое
+Молоко коровье пастеризованное
+Молоко коровье ультрапастеризованное
+Молоко коровье топленое
+Молоко коровье - другое
+Творог классический
+Сметана
+<Без категории>

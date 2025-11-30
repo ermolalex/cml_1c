@@ -4,4 +4,5 @@ lxml
 pytest
 pytest-django
 django-oscar
+sorl-thumbnail
 pycountry

@@ -1,8 +1,9 @@
 Django==5.2.7
-django-cml2
 lxml
 pytest
 pytest-django
-django-oscar
+django-oscar==4.1
 sorl-thumbnail
 pycountry
+
+# django-cml2

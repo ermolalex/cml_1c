@@ -434,8 +434,8 @@ class FileRef(object):
         if len(path) == 0:
             raise ValueError('Path must be not empty.')
 
-        p = Path('/', path).resolve()  # Prevent ../ or ./ in raw_path
-        self.path = Path(str(p)[1:])  # Cut first symbol '/', because it's relative path
+        #p = Path('/', path).resolve()  # Prevent ../ or ./ in raw_path
+        self.path = Path(path)  # Path(str(p)[1:])  # Cut first symbol '/', because it's relative path
 
         self.full_path = Path(base_path or self.base_path, self.path).resolve()  # Finally make absolute and safe path
 

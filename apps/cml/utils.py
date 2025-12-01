@@ -3,7 +3,7 @@ from __future__ import absolute_import
 import importlib
 import inspect
 from . import logger
-from . import items, xml
+from . import items
 #from .conf import settings
 from django.conf import settings
 

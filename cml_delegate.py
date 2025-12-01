@@ -8,20 +8,12 @@ All data structures explained in `cml.items` module.
 """
 import logging
 
-from oscar.apps.catalogue.models import ProductCategory
-
-from cml import items, utils
+from apps.cml import utils, items
 
 # Some libraries you may need also
-import os
-from datetime import datetime, timezone, timedelta
 from django.core.exceptions import ObjectDoesNotExist
-from django.core.files import File
-from django.db import transaction
-from django.conf import settings
 
 from oscar.core.loading import get_model
-from cml import items
 from utils.slugify import slugify
 
 logger = logging.getLogger(__name__)

@@ -39,11 +39,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'cml',
 
     'django.contrib.sites',
     'django.contrib.flatpages',
 
+    'apps.cml',
     'apps.catalogue.apps.CatalogueConfig',
     
     'oscar.config.Shop',

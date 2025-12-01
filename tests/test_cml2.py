@@ -1,4 +1,5 @@
-from cml import items
+from apps.cml import items
+
 
 def test_read_pack():
     pack = items.Packet.parse("import.xml")

@@ -160,6 +160,7 @@ $RECYCLE.BIN/
 addressbook/
 examples/
 requirements/
+temp/
 *.db
 *.bat
 *.pkl

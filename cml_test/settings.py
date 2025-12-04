@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-&ptpigrbsu2obz&t06bzwfu(5b2wp)*7pyad!x^4!x=g1$wt-p
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["103.88.243.84", "127.0.0.1", ]
 
 SITE_ID = 1
 
@@ -205,3 +205,17 @@ HAYSTACK_CONNECTIONS = {
 OSCAR_SHIPPING_COUNTRIES = ["RU", "BY", "KZ", "UZ",]
 OSCAR_SLUG_FUNCTION = 'utils.slugify.slugify'
 OSCAR_FULFILMENT_PARTNRT_NAME = "Яндекс"
+
+LOGGING = {
+    "version": 1,
+    "disable_existing_loggers": False,
+    "handlers": {
+        "console": {
+            "class": "logging.StreamHandler",
+        },
+    },
+    "root": {
+        "handlers": ["console"],
+        "level": "DEBUG",
+    },
+}

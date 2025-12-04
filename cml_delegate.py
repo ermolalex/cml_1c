@@ -8,18 +8,20 @@ All data structures explained in `cml.items` module.
 """
 import logging
 
-from apps.cml import utils, items
-
 # Some libraries you may need also
 from django.core.exceptions import ObjectDoesNotExist
-
 from oscar.core.loading import get_model
+
+from apps.catalogue.models import Product as TypeProduct
+from apps.cml import utils, items
 from utils.slugify import slugify
+
 
 logger = logging.getLogger(__name__)
 
 Category = get_model("catalogue", "Category")
 ProductClass = get_model("catalogue", "ProductClass")
+Product: TypeProduct = get_model("catalogue", "Product")
 
 
 class UserDelegate(utils.AbstractUserDelegate):
@@ -51,12 +53,12 @@ class UserDelegate(utils.AbstractUserDelegate):
         for item in groups:
             try:
                 # проверяем, нет ли уже такой группы
-                root = Category.objects.get(code=item.uid)
+                root = Category.objects.get(c1_uid=item.uid)
             except ObjectDoesNotExist:
                 # если нет, то создаем, но специальным методом из модуля django-treebeard
                 root = Category.add_root(
                     name=item.name,
-                    code=item.uid,
+                    c1_uid=item.uid,
                     slug=slugify(item.name),
                     description="Описание",
                     long_description="Длинное описание",
@@ -71,10 +73,10 @@ class UserDelegate(utils.AbstractUserDelegate):
             for child in item.groups:
                 try:
                     # проверяем, нет ли уже такой группы
-                    _ = Category.objects.get(code=child.uid)
+                    _ = Category.objects.get(c1_uid=child.uid)
                 except ObjectDoesNotExist:
                     # если нет, то создаем, но специальным методом из модуля django-treebeard
-                    root.add_child(name=child.name, code=child.uid)
+                    root.add_child(name=child.name, c1_uid=child.uid)
                     self.c_add_categories += 1
 
 
@@ -86,12 +88,12 @@ class UserDelegate(utils.AbstractUserDelegate):
         for item in categories:
             try:
                 # проверяем, нет ли уже такой категории
-                cat = ProductClass.objects.get(code=item.uid)
+                cat = ProductClass.objects.get(c1_uid=item.uid)
             except ObjectDoesNotExist:
                 # если нет, то создаем
                 product_class = ProductClass(
                     name=item.name,
-                    code=item.uid,
+                    c1_uid=item.uid,
                     requires_shipping=True,  # todo  добавить в 1С?
                     track_stock=True,  # todo  добавить в 1С?
                 )
@@ -106,9 +108,32 @@ class UserDelegate(utils.AbstractUserDelegate):
 
         print(self.get_report())
 
-    def import_catalogue(self, cat: items.Catalogue):
+
+    def _import_catalogue(self, catalog: items.Catalogue):
         """update_or_create products from catalogue, delete all others if need"""
-        print(cat)
+        for item in catalog.products:
+            try:
+                # проверяем, нет ли уже такого товара
+                product = Product.objects.get(c1_uid=item.uid)
+            except ObjectDoesNotExist:
+                # если нет, то создаем
+                category = Category.objects.get(c1_uid=item.group_uids)
+                product = Product(
+                    c1_uid=item.uid,
+                    # structure: default=STANDALONE
+                    # is_public: default=True
+                    title=item.name,
+                    slug=slugify(item.name),
+                    description=item.desc,
+                    #priority: default=0, "The highest priority products are shown first"
+                    ca
+
+                )
+                product.save()
+                self.c_add_prod_classes += 1
+
+
+        print(catalog)
 
         # Update statistics:
         # self.c_del_img += 1

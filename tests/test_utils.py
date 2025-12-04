@@ -1,4 +1,4 @@
-from utils.slugify import slugify
+from utils.str_utils import slugify
 
 def test_slugify():
     assert slugify("молоко") == "moloko"

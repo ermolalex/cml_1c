@@ -14,7 +14,7 @@ from oscar.core.loading import get_model
 
 from apps.catalogue.models import Product as TypeProduct
 from apps.cml import utils, items
-from utils.slugify import slugify
+from utils.str_utils import slugify
 
 
 logger = logging.getLogger(__name__)

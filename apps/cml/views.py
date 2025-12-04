@@ -367,6 +367,7 @@ class ProtocolView(View):
             if settings.CML_DELETE_FILES_AFTER_IMPORT:
                 try:
                     shutil.rmtree(items.FileRef.base_path)
+                    logger.info(f'Deleted file after import: {items.FileRef.base_path}')
                 except OSError as e:
                     logger.warning(f'Cannot delete files after import: {e}')
 

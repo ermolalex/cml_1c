@@ -3,7 +3,7 @@ import pprint
 
 
 def test_read_pack():
-    pack = items.Packet.parse("унф/import.xml")
+    pack = items.Packet.parse("unf/import.xml")
 
     assert pack.version == '2.08'
     #assert pack.create_date.strftime("%Y-%m-%dT%H:%M:%S") == '2025-10-20T12:28:35'

@@ -150,3 +150,30 @@ class UserDelegate(utils.AbstractUserDelegate):
     def export_orders(self) -> [items.Document]:
         """Create documents-orders for sending back. """
         pass
+
+"""
+#Create or get a ProductClass
+from oscar.core.utils import create_from_breadcrumbs
+from oscar.core.models import ProductClass
+from oscar.core.models import Product
+from oscar.core.models import ProductCategory
+
+
+product_class, _ = ProductClass.objects.get_or_create(name='Some Product Type')
+
+category_string = create_from_breadcrumbs('main>sub>deeper')
+
+product, _ = Product.objects.get_or_create(
+    upc='some_unique_upc',
+    defaults={
+        'title': 'My Awesome Product',
+        'product_class': product_class
+    }
+)
+
+ProductCategory.objects.update_or_create(
+    product=product,
+    category=category_string
+)
+
+"""

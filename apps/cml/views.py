@@ -242,6 +242,7 @@ class ProtocolView(View):
             self.user_delegate.import_catalogue(pack.catalogue)
             self.c_imp_catalogue += 1
         if pack.offers_pack:
+            logger.info(f"XML файл содержит {len(pack.offers_pack.offers)} офферов.")
             self.user_delegate.import_offers(pack.offers_pack)
             self.c_imp_offers_pack += 1
         for doc in pack.docs:

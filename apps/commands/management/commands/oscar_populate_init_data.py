@@ -47,6 +47,6 @@ class Command(BaseCommand):
         if Partner.objects.exists():
             self.stdout.write("Fulfilment partner already populated; nothing to be done.")
         else:
-            partner = Partner(name=settings.OSCAR_FULFILMENT_PARTNRT_NAME)
+            partner = Partner(name=settings.OSCAR_FULFILMENT_PARTNER_NAME)
             partner.save()
             self.stdout.write("Successfully added fulfilment partner.")

@@ -6,7 +6,7 @@ alphabet = {'а': 'a', 'б': 'b', 'в': 'v', 'г': 'g', 'д': 'd', 'е': 'e', '�
             'я': 'ya'}
 
 
-def slugify(s, allow_unicode=False, no_space=False, no_minus=False):
+def slugify(s, allow_unicode=False, no_space=True, no_minus=False):
     """
     Overriding django slugify that allows to use russian words as well.
     """

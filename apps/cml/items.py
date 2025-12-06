@@ -572,7 +572,7 @@ class Offer(ItemBase):
         prices = el.findall('Цены/Цена', converter_xml=Price.parse_xml)
         it.prices = [it_1 for it_1 in prices if it_1.price != 0]
         it.stocks = el.findall('Склад', converter_xml=StockCount.parse_xml)
-        it.stock_count = el.find('Количество', converter=int)
+        it.stock_count = el.find('Количество', converter=float)
         it.unit = el.find('БазоваяЕдиница', converter_xml=Unit.parse_xml_ref)
 
         return it

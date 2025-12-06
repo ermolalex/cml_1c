@@ -9,12 +9,29 @@ def test_read_pack():
     #assert pack.create_date.strftime("%Y-%m-%dT%H:%M:%S") == '2025-10-20T12:28:35'
 
     print(pack.classifier)
+
+    def _hendle_node(groups: [items.Group], parent: items.Group=None):
+        for i in groups:
+            path = ""
+            if parent:
+                path = parent.name
+                path += f" > {i.name}"
+            else:
+                path = i.name
+
+            print(path)
+            _hendle_node(i.groups, i)
+
+
     print("*** Groups ***")
-    for _ in pack.classifier.groups:
-        print(_)
-        if len(_.groups) > 0:
-            for __ in _.groups:
-                print("--", __)
+
+    _hendle_node(pack.classifier.groups)
+
+    # for _ in pack.classifier.groups:
+    #     print(_)
+    #     if len(_.groups) > 0:
+    #         for __ in _.groups:
+    #             print("--", __)
 
     print("")
     print("*** Properties ***")

@@ -203,8 +203,9 @@ HAYSTACK_CONNECTIONS = {
 }
 
 OSCAR_SHIPPING_COUNTRIES = ["RU", "BY", "KZ", "UZ",]
-OSCAR_SLUG_FUNCTION = 'utils.slugify.slugify'
-OSCAR_FULFILMENT_PARTNRT_NAME = "Яндекс"
+OSCAR_SLUG_FUNCTION = 'utils.str_utils.slugify'
+OSCAR_FULFILMENT_PARTNER_NAME = "Яндекс"
+OSCAR_GT_REPLACE_CHR = "_"
 
 LOGGING = {
     "version": 1,
